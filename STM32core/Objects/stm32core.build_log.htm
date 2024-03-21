@@ -1,0 +1,1016 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Don Quy, WorldSpaces, LIC=21E4T-R3V6P-Z9QG9-4PVW1-ZEPBD-3MHKB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\quydo\Desktop\FireWarning_Project\STM32core\stm32core.uvprojx
+Project File Date:  03/12/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+systick_time.c(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+systick_time.c(27): warning: no previous prototype for function 'DelayMillis' [-Wmissing-prototypes]
+   27 | void DelayMillis(void)
+      |      ^
+systick_time.c(27): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   27 | void DelayMillis(void)
+      | ^
+      | static 
+systick_time.c(56): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   56 |          if(uart_1_mgr[6] == 0)
+      |             ^~~~~~~~~~
+systick_time.c(59): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   59 |                 uart_1_mgr[1] = 1;
+      |                 ^~~~~~~~~~
+systick_time.c(60): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   60 |                 uart_1_mgr[5] = 0;
+      |                 ^~~~~~~~~~
+systick_time.c(65): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   65 |                 uart_1_mgr[6]--;
+      |                 ^~~~~~~~~~
+systick_time.c(70): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   70 |          if(uart_2_mgr[6] == 0)
+      |             ^~~~~~~~~~
+systick_time.c(73): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   73 |                 uart_2_mgr[1] = 1;
+      |                 ^~~~~~~~~~
+systick_time.c(74): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   74 |                 uart_2_mgr[5] = 0;
+      |                 ^~~~~~~~~~
+systick_time.c(79): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   79 |                 uart_2_mgr[6]--;
+      |                 ^~~~~~~~~~
+systick_time.c(84): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   84 |          if(uart_3_mgr[6] == 0)
+      |             ^~~~~~~~~~
+systick_time.c(87): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   87 |                 uart_3_mgr[1] = 1;
+      |                 ^~~~~~~~~~
+systick_time.c(88): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   88 |                 uart_3_mgr[5] = 0;
+      |                 ^~~~~~~~~~
+systick_time.c(93): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   93 |                 uart_3_mgr[6]--;
+      |                 ^~~~~~~~~~
+16 warnings generated.
+compiling systick_time.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+  166 | __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+      |             ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  166 | __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+      |     ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(408): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  408 |   tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
+      |         ^~~~~~~~~~~~~
+5 warnings generated.
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+PCF8574_drive.c(1): warning: In file included from...
+./PCF8574_drive.h(1): warning: In file included from...
+./i2c_drive.h(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+PCF8574_drive.c(4): warning: no previous prototype for function 'PCF8574_add' [-Wmissing-prototypes]
+    4 | void PCF8574_add(char i2c, char R_W)
+      |      ^
+PCF8574_drive.c(4): note: declare 'static' if the function is not intended to be used outside of this translation unit
+    4 | void PCF8574_add(char i2c, char R_W)
+      | ^
+      | static 
+4 warnings generated.
+compiling PCF8574_drive.c...
+msg_drive.c(1): warning: In file included from...
+./msg_drive.h(1): warning: In file included from...
+./uart_drive.h(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+msg_drive.c(14): warning: unused parameter 'uart' [-Wunused-parameter]
+   14 | void sync(char uart,char channels)
+      |                ^
+msg_drive.c(36): warning: array subscript is of type 'char' [-Wchar-subscripts]
+   36 |                 InsertData(data[i],wip);
+      |                                ^~
+msg_drive.c(55): warning: array subscript is of type 'char' [-Wchar-subscripts]
+   55 |                 msg_len += InsertData(data[i],wip);
+      |                                           ^~
+msg_drive.c(36): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   36 |                 InsertData(data[i],wip);
+      |                            ^~~~
+msg_drive.c(55): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   55 |                 msg_len += InsertData(data[i],wip);
+      |                                       ^~~~
+8 warnings generated.
+compiling msg_drive.c...
+main.c(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+main.c(69): warning: no previous extern declaration for non-static variable 'uart_1_mgr' [-Wmissing-variable-declarations]
+   69 | unsigned short uart_1_mgr[7]={0,0,0,0,0,0,0};
+      |                ^
+main.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   69 | unsigned short uart_1_mgr[7]={0,0,0,0,0,0,0};
+      | ^
+main.c(72): warning: no previous extern declaration for non-static variable 'USART_2_cnt' [-Wmissing-variable-declarations]
+   72 | unsigned short USART_2_cnt = 0;
+      |                ^
+main.c(72): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   72 | unsigned short USART_2_cnt = 0;
+      | ^
+main.c(73): warning: no previous extern declaration for non-static variable 'USART_2_sig' [-Wmissing-variable-declarations]
+   73 | unsigned short USART_2_sig = 0;
+      |                ^
+main.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   73 | unsigned short USART_2_sig = 0;
+      | ^
+main.c(74): warning: no previous extern declaration for non-static variable 'USART_2_bdg' [-Wmissing-variable-declarations]
+   74 | unsigned short USART_2_bdg = 0;
+      |                ^
+main.c(74): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   74 | unsigned short USART_2_bdg = 0;
+      | ^
+main.c(75): warning: no previous extern declaration for non-static variable 'uart_2_mgr' [-Wmissing-variable-declarations]
+   75 | unsigned short uart_2_mgr[7]={0,0,3,0,'\0',0,0};
+      |                ^
+main.c(75): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   75 | unsigned short uart_2_mgr[7]={0,0,3,0,'\0',0,0};
+      | ^
+main.c(78): warning: no previous extern declaration for non-static variable 'USART_3_cnt' [-Wmissing-variable-declarations]
+   78 | unsigned short USART_3_cnt = 0;
+      |                ^
+main.c(78): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   78 | unsigned short USART_3_cnt = 0;
+      | ^
+main.c(79): warning: no previous extern declaration for non-static variable 'USART_3_sig' [-Wmissing-variable-declarations]
+   79 | unsigned short USART_3_sig = 0;
+      |                ^
+main.c(79): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   79 | unsigned short USART_3_sig = 0;
+      | ^
+main.c(80): warning: no previous extern declaration for non-static variable 'USART_3_bdg' [-Wmissing-variable-declarations]
+   80 | unsigned short USART_3_bdg = 0;
+      |                ^
+main.c(80): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   80 | unsigned short USART_3_bdg = 0;
+      | ^
+main.c(81): warning: no previous extern declaration for non-static variable 'uart_3_mgr' [-Wmissing-variable-declarations]
+   81 | unsigned short uart_3_mgr[7]={0,0,2,0,'\0',0,0};
+      |                ^
+main.c(81): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   81 | unsigned short uart_3_mgr[7]={0,0,2,0,'\0',0,0};
+      | ^
+main.c(118): warning: no previous extern declaration for non-static variable 'adc_channels' [-Wmissing-variable-declarations]
+  118 | char adc_channels[17] = {PA0};
+      |      ^
+main.c(118): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  118 | char adc_channels[17] = {PA0};
+      | ^
+main.c(120): warning: no previous extern declaration for non-static variable 'channels' [-Wmissing-variable-declarations]
+  120 | char channels = 1;
+      |      ^
+main.c(120): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  120 | char channels = 1;
+      | ^
+main.c(158): warning: no previous extern declaration for non-static variable 'time_Warning' [-Wmissing-variable-declarations]
+  158 | int time_Warning = 0;
+      |     ^
+main.c(158): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  158 | int time_Warning = 0;
+      | ^
+main.c(352): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  352 | void USART2_IRQHandler()
+      |                       ^
+      |                        void
+main.c(352): warning: no previous prototype for function 'USART2_IRQHandler' [-Wmissing-prototypes]
+  352 | void USART2_IRQHandler()
+      |      ^
+main.c(352): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  352 | void USART2_IRQHandler()
+      | ^
+      | static 
+main.c(357): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  357 | void USART3_IRQHandler()
+      |                       ^
+      |                        void
+main.c(357): warning: no previous prototype for function 'USART3_IRQHandler' [-Wmissing-prototypes]
+  357 | void USART3_IRQHandler()
+      |      ^
+main.c(357): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  357 | void USART3_IRQHandler()
+      | ^
+      | static 
+main.c(365): warning: no newline at end of file [-Wnewline-eof]
+  365 | }
+      |  ^
+main.c(362): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+  362 | void SysTick_Handler(void)
+      |      ^
+main.c(362): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  362 | void SysTick_Handler(void)
+      | ^
+      | static 
+main.c(71): warning: no previous extern declaration for non-static variable 'USART_2_msg' [-Wmissing-variable-declarations]
+   71 | char USART_2_msg[250];
+      |      ^
+main.c(71): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   71 | char USART_2_msg[250];
+      | ^
+main.c(77): warning: no previous extern declaration for non-static variable 'USART_3_msg' [-Wmissing-variable-declarations]
+   77 | char USART_3_msg[250];
+      |      ^
+main.c(77): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   77 | char USART_3_msg[250];
+      | ^
+main.c(119): warning: no previous extern declaration for non-static variable 'analog_rx' [-Wmissing-variable-declarations]
+  119 | int analog_rx[17];
+      |     ^
+main.c(119): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  119 | int analog_rx[17];
+      | ^
+main.c(25): warning: unused variable 'mode' [-Wunused-variable]
+   25 | static int mode = 0;
+      |            ^~~~
+main.c(90): warning: unused variable 'countImg' [-Wunused-variable]
+   90 | static int countImg = 0;
+      |            ^~~~~~~~
+main.c(185): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  185 |                 dataUART[9] = '0';
+      |                 ^~~~~~~~
+main.c(219): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  219 |                         dataUART[i] = sigUART;
+      |                         ^~~~~~~~
+main.c(224): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  224 |                         ImageProcess[0] = dataUART[9];
+      |                                           ^~~~~~~~
+main.c(255): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  255 |                         hum[0] = dataUART[1];
+      |                                  ^~~~~~~~
+main.c(256): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  256 |                         hum[1] = dataUART[2];
+      |                         ^~~
+main.c(256): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  256 |                         hum[1] = dataUART[2];
+      |                                  ^~~~~~~~
+main.c(257): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  257 |                         hum[2] = dataUART[3];
+      |                         ^~~
+main.c(257): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  257 |                         hum[2] = dataUART[3];
+      |                                  ^~~~~~~~
+main.c(258): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  258 |                         hum[3] = dataUART[4];
+      |                         ^~~
+main.c(258): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  258 |                         hum[3] = dataUART[4];
+      |                                  ^~~~~~~~
+main.c(259): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  259 |                         temp[0] = dataUART[5];
+      |                                   ^~~~~~~~
+main.c(260): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  260 |                         temp[1] = dataUART[6];
+      |                         ^~~~
+main.c(260): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  260 |                         temp[1] = dataUART[6];
+      |                                   ^~~~~~~~
+main.c(261): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  261 |                         temp[2] = dataUART[7];
+      |                         ^~~~
+main.c(261): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  261 |                         temp[2] = dataUART[7];
+      |                                   ^~~~~~~~
+main.c(262): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  262 |                         temp[3] = dataUART[8];
+      |                         ^~~~
+main.c(262): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  262 |                         temp[3] = dataUART[8];
+      |                                   ^~~~~~~~
+main.c(327): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  327 |                         dataUART[9] = 'N';
+      |                         ^~~~~~~~
+44 warnings generated.
+compiling main.c...
+gp_drive.c(10): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+gp_drive.c(44): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+   44 |         *CR &= ~(0xf<<(tPin)*4);
+      |             ~~ ^~~~~~~~~~~~~~~~
+gp_drive.c(45): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+   45 |         *CR |= ((DIR<<(tPin*4)) | (OPT<<(tPin*4+2)));
+      |             ~~  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+gp_drive.c(38): warning: variable 'CR' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   38 |         else if(PORT == 3)
+      |                 ^~~~~~~~~
+gp_drive.c(44): note: uninitialized use occurs here
+   44 |         *CR &= ~(0xf<<(tPin)*4);
+      |          ^~
+gp_drive.c(38): note: remove the 'if' if its condition is always true
+   38 |         else if(PORT == 3)
+      |              ^~~~~~~~~~~~~
+   39 |                 {
+gp_drive.c(16): note: initialize the variable 'CR' to silence this warning
+   16 |         volatile unsigned long * CR;
+      |                                    ^
+      |                                     = 0
+gp_drive.c(66): warning: implicit conversion changes signedness: 'unsigned long' to 'int' [-Wsign-conversion]
+   66 |                 state =  ((*IDR & (1<<pin))>>pin)  ;
+      |                       ~   ~~~~~~~~~~~~~~~~~^~~~~
+gp_drive.c(62): warning: variable 'IDR' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   62 |         else if(PORT == 3)
+      |                 ^~~~~~~~~
+gp_drive.c(66): note: uninitialized use occurs here
+   66 |                 state =  ((*IDR & (1<<pin))>>pin)  ;
+      |                             ^~~
+gp_drive.c(62): note: remove the 'if' if its condition is always true
+   62 |         else if(PORT == 3)
+      |              ^~~~~~~~~~~~~
+   63 |                 {
+gp_drive.c(50): note: initialize the variable 'IDR' to silence this warning
+   50 |         volatile unsigned long * IDR;
+      |                                     ^
+      |                                      = 0
+gp_drive.c(87): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+   87 |         STATUS ? (*ODR |= (STATUS<<pin)) : (*ODR &= ~(1<<pin));
+      |                        ~~  ~~~~~~^~~~~
+gp_drive.c(87): warning: variable 'ODR' may be uninitialized when used here [-Wconditional-uninitialized]
+   87 |         STATUS ? (*ODR |= (STATUS<<pin)) : (*ODR &= ~(1<<pin));
+      |                    ^~~
+gp_drive.c(73): note: initialize the variable 'ODR' to silence this warning
+   73 |         volatile unsigned long * ODR;
+      |                                     ^
+      |                                      = 0
+gp_drive.c(108): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  108 |         STATUS ? (GPIOC->ODR |= (STATUS<<pin)) : (GPIOC->ODR &= ~(1<<pin));
+      |                              ~~  ~~~~~~^~~~~
+gp_drive.c(31): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   31 |                         CR = (volatile unsigned long *)(&GPIO_A + offset);
+      |                                                         ^~~~~~~
+gp_drive.c(36): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   36 |                 CR = (volatile unsigned long *)(&GPIO_B+ offset);
+      |                                                 ^~~~~~~
+gp_drive.c(41): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   41 |                 CR = (volatile unsigned long *)(&GPIO_C + offset);
+      |                                                 ^~~~~~~
+gp_drive.c(56): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   56 |                         IDR = (volatile unsigned long *)(&GPIO_A + offset);
+      |                                                          ^~~~~~~
+gp_drive.c(60): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   60 |                 IDR = (volatile unsigned long *)(&GPIO_B+ offset);
+      |                                                  ^~~~~~~
+gp_drive.c(64): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   64 |                 IDR = (volatile unsigned long *)(&GPIO_C+ offset);
+      |                                                  ^~~~~~~
+gp_drive.c(77): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   77 |                         ODR = (volatile unsigned long *)(&GPIO_A + offset);
+      |                                                          ^~~~~~~
+gp_drive.c(81): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   81 |                 ODR = (volatile unsigned long *)(&GPIO_B+ offset);
+      |                                                  ^~~~~~~
+gp_drive.c(85): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   85 |                 ODR = (volatile unsigned long *)(&GPIO_C+ offset);
+      |                                                  ^~~~~~~
+20 warnings generated.
+compiling gp_drive.c...
+adc_drive.c(1): warning: In file included from...
+./adc_drive.h(2): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+adc_drive.c(38): warning: implicit conversion loses integer precision: 'short' to 'char' [-Wimplicit-int-conversion]
+   38 |                         channel = pin;
+      |                                 ~ ^~~
+adc_drive.c(46): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+   46 |                 channel = 8 + pin;
+      |                         ~ ~~^~~~~
+adc_drive.c(54): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+   54 |                 channel = 10 + pin;
+      |                         ~ ~~~^~~~~
+adc_drive.c(59): warning: implicit conversion changes signedness: 'short' to 'unsigned short' [-Wsign-conversion]
+   59 |                 init_GP(port,pin,IN,I_AN);
+      |                 ~~~~~~~      ^~~
+adc_drive.c(59): warning: implicit conversion changes signedness: 'short' to 'unsigned short' [-Wsign-conversion]
+   59 |                 init_GP(port,pin,IN,I_AN);
+      |                 ~~~~~~~ ^~~~
+adc_drive.c(64): warning: variable 'channel' may be uninitialized when used here [-Wconditional-uninitialized]
+   64 |                         ADC1->SQR3 = channel;
+      |                                      ^~~~~~~
+adc_drive.c(31): note: initialize the variable 'channel' to silence this warning
+   31 |         char channel;
+      |                     ^
+      |                      = '\0'
+adc_drive.c(114): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  114 |                 data = ADC1->DR;
+      |                      ~ ~~~~~~^~
+adc_drive.c(118): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  118 |                 data = ADC2->DR;
+      |                      ~ ~~~~~~^~
+adc_drive.c(108): warning: unused parameter 'port' [-Wunused-parameter]
+  108 | int adc_rx(char adc, short port, short pin)
+      |                            ^
+adc_drive.c(108): warning: unused parameter 'pin' [-Wunused-parameter]
+  108 | int adc_rx(char adc, short port, short pin)
+      |                                        ^
+adc_drive.c(153): warning: implicit conversion changes signedness: 'short' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  153 |                 ADC1->HTR = htr;
+      |                           ~ ^~~
+adc_drive.c(154): warning: implicit conversion changes signedness: 'short' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  154 |                 ADC1->LTR = ltr;
+      |                           ~ ^~~
+adc_drive.c(160): warning: implicit conversion changes signedness: 'short' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  160 |                 ADC2->HTR = htr;
+      |                           ~ ^~~
+adc_drive.c(161): warning: implicit conversion changes signedness: 'short' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  161 |                 ADC2->LTR = ltr;
+      |                           ~ ^~~
+adc_drive.c(176): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  176 |                 if(adc_channels[i]<8)
+      |                                ^~
+adc_drive.c(178): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  178 |                         init_GP(PA,adc_channels[i],IN,I_AN);
+      |                                                ^~
+adc_drive.c(180): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  180 |                 else if(adc_channels[i]<10)
+      |                                     ^~
+adc_drive.c(182): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  182 |                         init_GP(PB,adc_channels[i]-8,IN,I_AN);
+      |                                                ^~
+adc_drive.c(184): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  184 |                 else if(adc_channels[i]<16)
+      |                                     ^~
+adc_drive.c(186): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  186 |                         init_GP(PC,adc_channels[i]-10,IN,I_AN);
+      |                                                ^~
+adc_drive.c(223): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  223 |                                 temp_rx = ADC1->DR;
+      |                                         ~ ~~~~~~^~
+adc_drive.c(225): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  225 |                                 analog_rx[i] = temp_rx ;
+      |                                          ^~
+adc_drive.c(230): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  230 |                                         ADC1->SQR3 = adc_channels[i];
+      |                                                                  ^~
+adc_drive.c(235): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  235 |                                         ADC1->SQR3 = adc_channels[i];
+      |                                                                  ^~
+adc_drive.c(247): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int' [-Wsign-conversion]
+  247 |                                 temp_rx = ADC2->DR;
+      |                                         ~ ~~~~~~^~
+adc_drive.c(249): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  249 |                                 analog_rx[i] = temp_rx ;
+      |                                          ^~
+adc_drive.c(254): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  254 |                                 ADC2->SQR3 = adc_channels[i];
+      |                                                          ^~
+adc_drive.c(259): warning: array subscript is of type 'char' [-Wchar-subscripts]
+  259 |                                 ADC2->SQR3 = adc_channels[i];
+      |                                                          ^~
+adc_drive.c(176): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  176 |                 if(adc_channels[i]<8)
+      |                    ^~~~~~~~~~~~
+adc_drive.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |                         init_GP(PA,adc_channels[i],IN,I_AN);
+      |                                    ^~~~~~~~~~~~
+adc_drive.c(180): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  180 |                 else if(adc_channels[i]<10)
+      |                         ^~~~~~~~~~~~
+adc_drive.c(182): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  182 |                         init_GP(PB,adc_channels[i]-8,IN,I_AN);
+      |                                    ^~~~~~~~~~~~
+adc_drive.c(184): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  184 |                 else if(adc_channels[i]<16)
+      |                         ^~~~~~~~~~~~
+adc_drive.c(186): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  186 |                         init_GP(PC,adc_channels[i]-10,IN,I_AN);
+      |                                    ^~~~~~~~~~~~
+adc_drive.c(196): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  196 |         ADC1->SQR3 = adc_channels[1];
+      |                      ^~~~~~~~~~~~
+adc_drive.c(206): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  206 |         ADC2->SQR3 = adc_channels[1];
+      |                      ^~~~~~~~~~~~
+adc_drive.c(225): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  225 |                                 analog_rx[i] = temp_rx ;
+      |                                 ^~~~~~~~~
+adc_drive.c(230): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  230 |                                         ADC1->SQR3 = adc_channels[i];
+      |                                                      ^~~~~~~~~~~~
+adc_drive.c(235): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  235 |                                         ADC1->SQR3 = adc_channels[i];
+      |                                                      ^~~~~~~~~~~~
+adc_drive.c(249): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  249 |                                 analog_rx[i] = temp_rx ;
+      |                                 ^~~~~~~~~
+adc_drive.c(254): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  254 |                                 ADC2->SQR3 = adc_channels[i];
+      |                                              ^~~~~~~~~~~~
+adc_drive.c(259): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  259 |                                 ADC2->SQR3 = adc_channels[i];
+      |                                              ^~~~~~~~~~~~
+45 warnings generated.
+compiling adc_drive.c...
+help_func.c(128): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+  128 |         lstr[cnt] = num % div + 0x30;
+      |                   ~ ~~~~~~~~~~^~~~~~
+help_func.c(133): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+  133 |         lstr[cnt] = num + 0x30;
+      |                   ~ ~~~~^~~~~~
+help_func.c(6): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+    6 |         while(str[i] != '\0')
+      |               ^~~
+help_func.c(8): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+    8 |                 str[i] = '\0';
+      |                 ^~~
+help_func.c(18): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   18 |                 str[i] = '\0';
+      |                 ^~~
+help_func.c(29): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   29 |         while(str[len] != '\0')
+      |               ^~~
+help_func.c(50): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   50 |         while((str2[i + STRlen-1] != '\0' | str2[i + STRlen] != '\0') & (match ==0))
+      |                ^~~~
+help_func.c(50): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   50 |         while((str2[i + STRlen-1] != '\0' | str2[i + STRlen] != '\0') & (match ==0))
+      |                                             ^~~~
+help_func.c(54): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   54 |                         if(str1[j] == str2[i+j])
+      |                            ^~~~
+help_func.c(54): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   54 |                         if(str1[j] == str2[i+j])
+      |                                       ^~~~
+help_func.c(99): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   99 |         while(str1[i] != '\0')
+      |               ^~~~
+help_func.c(101): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  101 |         while(str2[j]!= '\0')
+      |               ^~~~
+help_func.c(103): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  103 |                 str1[i+j]= str2[j];
+      |                 ^~~~
+help_func.c(103): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  103 |                 str1[i+j]= str2[j];
+      |                            ^~~~
+help_func.c(128): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  128 |         lstr[cnt] = num % div + 0x30;
+      |         ^~~~
+help_func.c(133): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  133 |         lstr[cnt] = num + 0x30;
+      |         ^~~~
+help_func.c(138): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  138 |                 lstr[cnt] = '-';
+      |                 ^~~~
+help_func.c(142): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  142 |         str[cnt-j] = lstr[j];
+      |         ^~~
+help_func.c(142): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  142 |         str[cnt-j] = lstr[j];
+      |                      ^~~~
+help_func.c(163): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  163 |                 check[0] = str[j];
+      |                            ^~~
+help_func.c(174): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  174 |                         result = result *10 + (str[j] -0x30);
+      |                                                ^~~
+21 warnings generated.
+compiling help_func.c...
+uart_drive.c(1): warning: In file included from...
+./uart_drive.h(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+uart_drive.c(26): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   26 |         USART1->BRR = BRR_Cal; 
+      |                     ~ ^~~~~~~
+uart_drive.c(43): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   43 |         USART2->BRR = BRR_Cal; 
+      |                     ~ ^~~~~~~
+uart_drive.c(61): warning: implicit conversion loses integer precision: 'unsigned long' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   61 |         USART3->BRR = BRR_Cal; 
+      |                     ~ ^~~~~~~
+uart_drive.c(86): warning: implicit conversion turns floating-point number into integer: 'double' to 'unsigned long' [-Wfloat-conversion]
+   86 |         dec = frac;
+      |             ~ ^~~~
+uart_drive.c(112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  112 |                 {};
+      |                   ^
+uart_drive.c(113): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+  113 |                 c = USART1->DR;
+      |                   ~ ~~~~~~~~^~
+uart_drive.c(118): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  118 |                 {};
+      |                   ^
+uart_drive.c(119): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+  119 |                 c = USART2->DR;
+      |                   ~ ~~~~~~~~^~
+uart_drive.c(124): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  124 |                 {};
+      |                   ^
+uart_drive.c(125): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+  125 |                 c = USART3->DR;
+      |                   ~ ~~~~~~~~^~
+uart_drive.c(127): warning: variable 'c' may be uninitialized when used here [-Wconditional-uninitialized]
+  127 |                 return c;
+      |                        ^
+uart_drive.c(108): note: initialize the variable 'c' to silence this warning
+  108 |         char c;
+      |               ^
+      |                = '\0'
+uart_drive.c(135): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  135 |                         {};
+      |                           ^
+uart_drive.c(141): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  141 |                         {};
+      |                           ^
+uart_drive.c(147): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  147 |                         {};
+      |                           ^
+uart_drive.c(160): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  160 |         if(uart_mgr[2] == 0)
+      |            ^~~~~~~~
+uart_drive.c(162): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  162 |                         str[uart_mgr[0]] = UART_RX(uart);
+      |                         ^~~
+uart_drive.c(163): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  163 |                         if(uart_mgr[3])
+      |                            ^~~~~~~~
+uart_drive.c(165): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  165 |                                                 if(str[uart_mgr[0]] == uart_mgr[4])
+      |                                                    ^~~
+uart_drive.c(165): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  165 |                                                 if(str[uart_mgr[0]] == uart_mgr[4])
+      |                                                                        ^~~~~~~~
+uart_drive.c(168): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  168 |                                                         uart_mgr[1] = 1;
+      |                                                         ^~~~~~~~
+uart_drive.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |                                                 uart_mgr[6] = uart_mgr[5];
+      |                                                 ^~~~~~~~
+uart_drive.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |                                                 uart_mgr[6] = uart_mgr[5];
+      |                                                               ^~~~~~~~
+uart_drive.c(184): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  184 |                 UART_TX(uart_mgr[2],UART_RX(uart));
+      |                         ^~~~~~~~
+uart_drive.c(191): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  191 |         while(str[i] != '\0')
+      |               ^~~
+uart_drive.c(193): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  193 |                 UART_TX(uart,str[i]);
+      |                              ^~~
+uart_drive.c(205): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  205 |         while(str_mgr[1] == 0 & timeOut != 0)
+      |               ^~~~~~~
+uart_drive.c(209): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  209 |         str_mgr[1] = 0;
+      |         ^~~~~~~
+30 warnings generated.
+compiling uart_drive.c...
+i2c_drive.c(1): warning: In file included from...
+./i2c_drive.h(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+i2c_drive.c(67): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   67 |                 };
+      |                  ^
+i2c_drive.c(72): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   72 |                 while (!(I2C2->SR1 & 1)){};
+      |                                           ^
+i2c_drive.c(94): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+   94 |                 };
+      |                  ^
+i2c_drive.c(108): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+  108 |                 while((I2C2->SR1 & 2)==0){};
+      |                                            ^
+i2c_drive.c(79): warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+   79 |         volatile int tmp;
+      |                      ^
+i2c_drive.c(145): warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  145 |         volatile int tmp;
+      |                      ^
+i2c_drive.c(184): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+  184 |                         temp = I2C1->DR;
+      |                              ~ ~~~~~~^~
+i2c_drive.c(195): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'char' [-Wimplicit-int-conversion]
+  195 |                         temp = I2C2->DR;
+      |                              ~ ~~~~~~^~
+i2c_drive.c(191): warning: variable 'temp' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+  191 |         else if(i2c==2)
+      |                 ^~~~~~
+i2c_drive.c(202): note: uninitialized use occurs here
+  202 |         return temp;
+      |                ^~~~
+i2c_drive.c(191): note: remove the 'if' if its condition is always true
+  191 |         else if(i2c==2)
+      |              ^~~~~~~~~~
+  192 |         {
+i2c_drive.c(179): note: initialize the variable 'temp' to silence this warning
+  179 |         char temp;
+      |                  ^
+      |                   = '\0'
+i2c_drive.c(168): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  168 |         while(data[i])
+      |               ^~~~
+i2c_drive.c(170): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  170 |                         i2c_data(i2c,data[i]);
+      |                                      ^~~~
+14 warnings generated.
+compiling i2c_drive.c...
+lcd_1602_drive.c(1): warning: In file included from...
+./lcd_1602_drive.h(3): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+lcd_1602_drive.c(168): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+  168 |         lcd_cmd(0x80 +pos + pos_0_16);
+      |         ~~~~~~~ ~~~~~~~~~~^~~~~~~~~~
+lcd_1602_drive.c(332): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+  332 |         lcd_i2c_cmd(i2c,0x80 +pos + pos_0_16);
+      |         ~~~~~~~~~~~     ~~~~~~~~~~^~~~~~~~~~
+lcd_1602_drive.c(148): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  148 |                 while(str[i])
+      |                       ^~~
+lcd_1602_drive.c(150): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  150 |                         lcd_data(str[i]);
+      |                                  ^~~
+lcd_1602_drive.c(314): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  314 |                 while(str[i])
+      |                       ^~~
+lcd_1602_drive.c(316): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  316 |                         lcd_i2c_data(i2c,str[i]);
+      |                                          ^~~
+9 warnings generated.
+compiling lcd_1602_drive.c...
+timer_drive.c(1): warning: In file included from...
+./timer_drive.h(1): warning: In file included from...
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+timer_drive.c(3): warning: no previous prototype for function 'get_timer' [-Wmissing-prototypes]
+    3 | TIM_TypeDef * get_timer(char timer){
+      |               ^
+timer_drive.c(3): note: declare 'static' if the function is not intended to be used outside of this translation unit
+    3 | TIM_TypeDef * get_timer(char timer){
+      | ^
+      | static 
+timer_drive.c(12): warning: variable 'tim' may be uninitialized when used here [-Wconditional-uninitialized]
+   12 |         return tim;
+      |                ^~~
+timer_drive.c(4): note: initialize the variable 'tim' to silence this warning
+    4 |         TIM_TypeDef * tim;
+      |                          ^
+      |                           = 0
+timer_drive.c(34): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   34 |         tim->PSC = prescaler;   
+      |                  ~ ^~~~~~~~~
+timer_drive.c(37): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   37 |         tim->ARR = (microS-3);  
+      |                  ~  ~~~~~~^~
+timer_drive.c(15): warning: no previous prototype for function 'timer_start_micros' [-Wmissing-prototypes]
+   15 | TIM_TypeDef * timer_start_micros(char timer, int microS){
+      |               ^
+timer_drive.c(15): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   15 | TIM_TypeDef * timer_start_micros(char timer, int microS){
+      | ^
+      | static 
+timer_drive.c(64): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   64 |         tim->PSC = prescaler;   
+      |                  ~ ^~~~~~~~~
+timer_drive.c(67): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   67 |         tim->ARR = (millis*2);  
+      |                  ~  ~~~~~~^~
+timer_drive.c(45): warning: no previous prototype for function 'timer_start_millis' [-Wmissing-prototypes]
+   45 | TIM_TypeDef * timer_start_millis(char timer, int millis){
+      |               ^
+timer_drive.c(45): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   45 | TIM_TypeDef * timer_start_millis(char timer, int millis){
+      | ^
+      | static 
+timer_drive.c(180): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  180 |                 RCC->APB2ENR &= ~0x0800;
+      |                              ~~ ^~~~~~~
+timer_drive.c(193): warning: no previous prototype for function 'get_channel' [-Wmissing-prototypes]
+  193 | char get_channel(char port, char pin){
+      |      ^
+timer_drive.c(193): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  193 | char get_channel(char port, char pin){
+      | ^
+      | static 
+timer_drive.c(223): warning: no previous prototype for function 'get_timer_pin' [-Wmissing-prototypes]
+  223 | char get_timer_pin(char port, char pin){
+      |      ^
+timer_drive.c(223): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  223 | char get_timer_pin(char port, char pin){
+      | ^
+      | static 
+timer_drive.c(253): warning: no previous prototype for function 'get_timer_address' [-Wmissing-prototypes]
+  253 | TIM_TypeDef * get_timer_address(char port, char pin){
+      |               ^
+timer_drive.c(253): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  253 | TIM_TypeDef * get_timer_address(char port, char pin){
+      | ^
+      | static 
+timer_drive.c(312): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  312 |         tim->ARR = (arr-1);
+      |                  ~  ~~~^~
+timer_drive.c(315): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  315 |                 case 1: tim->CCR1 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(316): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  316 |                 case 2: tim->CCR2 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(317): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  317 |                 case 3: tim->CCR3 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(318): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  318 |                 case 4: tim->CCR4 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(350): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  350 |         tim->ARR = (arr*2-1);
+      |                  ~  ~~~~~^~
+timer_drive.c(356): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  356 |                 case 1: tim->CCR1 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(357): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  357 |                 case 2: tim->CCR2 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(358): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  358 |                 case 3: tim->CCR3 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(359): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  359 |                 case 4: tim->CCR4 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(391): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  391 |         tim->ARR = (arr-1);
+      |                  ~  ~~~^~
+timer_drive.c(394): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  394 |                 case 1: tim->CCR1 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(395): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  395 |                 case 2: tim->CCR2 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(396): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  396 |                 case 3: tim->CCR3 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(397): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  397 |                 case 4: tim->CCR4 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(429): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  429 |         tim->ARR = (arr*2-1);
+      |                  ~  ~~~~~^~
+timer_drive.c(435): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  435 |                 case 1: tim->CCR1 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(436): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  436 |                 case 2: tim->CCR2 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(437): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  437 |                 case 3: tim->CCR3 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(438): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  438 |                 case 4: tim->CCR4 = compare; break;
+      |                                   ~ ^~~~~~~
+timer_drive.c(451): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  451 |         int deg_pwm = 400 + deg*11;
+      |             ^
+timer_drive.c(461): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  461 |         int speed_pwm = 1500 - speed*8;
+      |             ^
+timer_drive.c(470): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  470 |         int speed_pwm = 1500 + speed*8;
+      |             ^
+38 warnings generated.
+compiling timer_drive.c...
+linking...
+Program Size: Code=10600 RO-data=464 RW-data=44 ZI-data=2292  
+".\Objects\stm32core.axf" - 0 Error(s), 254 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/quydo/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/quydo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
